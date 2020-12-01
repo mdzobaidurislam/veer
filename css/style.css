@@ -9,6 +9,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 button:focus {
     outline: 0px dotted;
     outline: 0px auto -webkit-focus-ring-color;
@@ -65,7 +68,12 @@ body {
 /* Navbar area start  */
 #nav {
     padding: 22px 0;
-    background: #ffffff;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    width: 100%;
 }
 #nav .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
@@ -75,6 +83,21 @@ body {
     font-size: 16px;
     text-transform: uppercase;
 }
+/* stiky menu  starts */
+.stikyadded {
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.050980392156862744);
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #ffffff !important;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+/* stiky menu  ends */
 
 /* Navbar area end  */
 /* Banner area start  */
